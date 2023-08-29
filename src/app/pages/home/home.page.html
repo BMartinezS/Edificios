@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <ion-button (click)="goTo('mihistorial')" class="large-button">
+      Historial de visitas
+    </ion-button>
+    <ion-button (click)="goTo('misedificios')" class="large-button">
+      Mis edificios
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Historial de visitas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Historial de visitas</h1>
+
+  <ion-list>
+    <ion-item *ngFor="let visit of visits">
+      <ion-label>
+        <h2>Edificio: {{ visit.building }}</h2>
+        <p>Fecha: {{ visit.date }}</p>
+        <p>Desglose: {{ visit.description }}</p>
+        <p>Cobrado: ${{ visit.charge }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
